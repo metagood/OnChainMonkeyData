@@ -23,9 +23,9 @@ end
 def flatten_twin_struct(twins)
   t = {}
   twins.each { |k, v|
-    siblings = {}
+    siblings = []
     v.each { |k1, v1|
-      siblings[k1] = v1
+      siblings << { k1 => v1 }
     }
     t[k] = siblings
   }
