@@ -8,6 +8,7 @@ FUR1     = ["653","532","444","a71","ffc","ca9","f89","777","049","901","fc5","f
 FUR2     = ["532","653","653","653","653","653","653","653","653","653","110","653","711","344","799","555","8a8","32f","653"]
 
 # order from OCM.csv
+M_IND       = 0
 HAT_IND     = 1
 FUR_IND     = 2
 CLOTHES_IND = 3
@@ -16,7 +17,7 @@ EARRING_IND = 5
 MOUTH_IND   = 6
 
 # for printing list of all OCM# that match a specific meta-trait. OCM#s for meta-traits with counts above this are printed in results
-THRESHOLD = 200
+THRESHOLD = 300
 
 # NOTE: use this with a grain of salt, there may be bugs in these results
 #       also, there will be more and new meta-traits and lore that are interesting
@@ -28,6 +29,26 @@ class MonkeyTraits
   def initialize
     # order is: tokenId, hat, fur, clothes, eyes, earring, mouth, background
     @monkeys = open('OCM.csv').readlines.map {|i| i.strip.split(',').map {|i| i.to_i}}[1..-1] # skip first header row
+    @h_nips = {}
+    @h_color = {}
+    @h_snout = {}
+    @h_zero = {}
+    @h_trait_count = {}
+  end
+
+  def write_csv
+    open('OCM_meta_traits.csv','w') do |f|
+      f.puts "tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color-match, mouth-match, zeros, nips"
+      @monkeys.each_with_index do |m, j|
+        i = j + 1
+        raise unless @h_nips[i]
+        raise unless @h_color[i]
+	raise unless @h_snout[i]
+	raise unless @h_zero[i]
+        raise unless @h_trait_count[i]
+        f.puts (m + [@h_trait_count[i], @h_color[i], @h_snout[i], @h_zero[i], @h_nips[i]]).join(",")
+      end
+    end
   end
 
   def find_twins
@@ -134,6 +155,14 @@ class MonkeyTraits
     monkey[1..-1].select {|i| i==0}.size
   end 
 
+  def trait_count(monkey)
+    c = 4
+    c += 1 if monkey[HAT_IND]!=0 
+    c += 1 if monkey[CLOTHES_IND]!=0  
+    c += 1 if monkey[EARRING_IND]!=0
+    c
+  end
+
   # no hat, no earring, no clothes
   def naked?(monkey)
     monkey[HAT_IND]==0 && monkey[CLOTHES_IND]==0 && monkey[EARRING_IND]==0
@@ -144,37 +173,43 @@ class MonkeyTraits
     monkey[HAT_IND]==0 && monkey[CLOTHES_IND]==0 && monkey[EARRING_IND]!=0
   end
 
+  # no clothes with hat
+  def magic_monk?(monkey)
+    monkey[HAT_IND]!=0 && monkey[CLOTHES_IND]==0
+  end
+
   def clothes_stats
     h = {}
     h_match = Hash.new(0)
     h_reverse = Hash.new(0)
     h_hat = Hash.new(0)
     @monkeys.map do |m|
+      s = nil
       if clothes_match?(m)
-        h['color-match'] = [] unless h['color-match']
-        h['color-match'] << m[0]
+        s = 'color-match'
         h_match[[m[CLOTHES_IND], m[HAT_IND]].join('_')] += 1
       elsif clothes_reverse?(m)
-        h['reverse color-match'] = [] unless h['reverse color-match']
-        h['reverse color-match'] << m[0]
+        s = 'reverse color-match'
         h_reverse[[m[CLOTHES_IND], m[HAT_IND]].join('_')] += 1
       else
         ccc = clothes_color_count(m)
-        ccc = if ccc == 2
+        s = if ccc == 2
           h_hat[[m[CLOTHES_IND], m[HAT_IND]].join('_')] += 1
-          '2 colors w/ matching solid color hat'
+          '2-color w/ matching solid color hat'
         elsif ccc == 3
-          '3 colors'
+          '3-color'
         elsif ccc == 4
-          '4 colors'
+          '4-color'
         elsif ccc == -1
           'N/A'
         else
           raise
         end
-        h[ccc] = [] unless h[ccc]
-        h[ccc] << m[0]
       end
+      raise unless s
+      h[s] = [] unless h[s]
+      h[s] << m[0]
+      @h_color[m[M_IND].to_i] = s
     end
     puts '----------------------------------------------------------------------------------'
     puts
@@ -192,6 +227,7 @@ class MonkeyTraits
       s = zero_count(m)
       h[s] = [] unless h[s]
       h[s] << m[0]
+      @h_zero[m[M_IND].to_i] = s
     end
     puts '----------------------------------------------------------------------------------'
     puts
@@ -206,17 +242,17 @@ class MonkeyTraits
   def naked_stats
     h = {}
     @monkeys.map do |m|
-      if naked?(m)
+      s = if naked?(m)
         z = zero_count(m)
-        s = "naked #{z}-0"
-        h[s] = [] unless h[s]
-        h[s] << m[0]
+        "naked #{z}-0"
       elsif tagged?(m)
         z = zero_count(m)
-        s = "tagged #{z}-0"
-        h[s] = [] unless h[s]
-        h[s] << m[0]
+        "tagged #{z}-0"
       end
+      h[s] = [] unless h[s]
+      h[s] << m[0]
+      @h_nips[m[M_IND].to_i] = s
+      @h_trait_count[m[M_IND].to_i] = trait_count(m)
     end
     puts '----------------------------------------------------------------------------------'
     puts
@@ -231,27 +267,25 @@ class MonkeyTraits
   def naked_stats2
     h = {}
     @monkeys.map do |m|
-      if naked?(m)
-        s = if mouth_snoutless?(m)
+      s = if naked?(m)
+        if mouth_snoutless?(m)
           "naked snoutless"
         elsif mouth_match?(m)
           "naked snout-match"
         else
           "naked plain"
         end
-        h[s] = [] unless h[s]
-        h[s] << m[0]
       elsif tagged?(m)
-        s = if mouth_snoutless?(m)
+        if mouth_snoutless?(m)
           "tagged snoutless"
         elsif mouth_match?(m)
           "tagged snout-match"
         else
           "tagged plain"
         end
-        h[s] = [] unless h[s]
-        h[s] << m[0]
       end
+      h[s] = [] unless h[s]
+      h[s] << m[0]
     end
     puts '----------------------------------------------------------------------------------'
     puts
@@ -263,22 +297,50 @@ class MonkeyTraits
     h
   end  
 
+  def nip_stats
+    h = {}
+    @monkeys.map do |m|
+      s = if naked?(m)
+        'naked'
+      elsif tagged?(m)
+        'tagged'
+      elsif magic_monk?(m)
+        'magic monk'
+      else
+        byebug if m[CLOTHES_IND]==0 
+        'covered'
+      end
+      h[s] = [] unless h[s]
+      h[s] << m[0]
+      @h_nips[m[M_IND].to_i] = s
+    end
+    puts '----------------------------------------------------------------------------------'
+    puts
+    puts 'nips stats:'
+    puts
+    puts h.to_a.map {|i,j| [i,j.size]}.sort {|i,j| j[1]<=>i[1]}.inspect
+    puts
+    puts h.to_a.select {|i,j| j.size <= THRESHOLD}.sort {|i,j| j[1].size<=>i[1].size}.inspect
+    h
+  end
+
   def mouth_stats
     snoutless_fur = Hash.new(0)
     fur_mouth = Hash.new(0)
     h = {}
     @monkeys.map do |m|
-      if mouth_snoutless?(m)
+      s = if mouth_snoutless?(m)
         snoutless_fur[m[FUR_IND]] += 1
         fur_mouth["#{m[FUR_IND]}_#{m[MOUTH_IND]}"] += 1
-        s = 'snoutless'
-        h[s] = [] unless h[s]
-        h[s] << m[0]
+        'snoutless'
       elsif mouth_match?(m)
-        s = 'snout-match'
-        h[s] = [] unless h[s]
-        h[s] << m[0]
+        'snout-match'
+      else
+        'regular' 
       end
+      h[s] = [] unless h[s]
+      h[s] << m[0]
+      @h_snout[m[M_IND].to_i] = s
     end
     puts '----------------------------------------------------------------------------------'
     puts
@@ -318,4 +380,7 @@ h4 = mt.zero_stats
 h5 = mt.mouth_stats
 h6 = mt.poker_stats
 h7 = mt.find_twins
+h8 = mt.nip_stats
 puts
+
+mt.write_csv

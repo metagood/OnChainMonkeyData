@@ -42,8 +42,9 @@ t4 = mt.zero_stats
 t5 = mt.mouth_stats
 t6 = mt.poker_stats
 t7 = flatten_twin_struct(mt.find_twins)
+t8 = mt.nip_stats
 
-meta = flatten([t1, t2, t3, t4, t5, t6, t7])
+meta = flatten([t1, t2, t3, t4, t5, t6, t7, t8])
 
 o = File.open("meta_traits.json", "w")
 o << JSON.pretty_generate(meta)
