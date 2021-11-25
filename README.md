@@ -16,9 +16,9 @@ The list of current meta traits can be found in the following files in different
 
 ## Image assets
 ### SVG
-Raw svg files are in found [svgs](svgs)
+Raw svg files are found in [svgs](svgs)
 ### PNG
-To access **png** files generated from the svgs use the URL:
+To access **png** files generated from the svgs, use the URL:
 ```
 https://d3q7x2s6555pey.cloudfront.net/png/XXX.png 
 ```
