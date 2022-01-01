@@ -214,7 +214,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 213,26,3,29,9,0,1,1,6,2-color w/ matching solid color hat,regular,1,covered
 214,5,1,1,16,0,1,0,6,3-color,regular,2,covered
 215,14,9,16,4,5,3,1,7,3-color,regular,0,covered
-216,15,5,3,1,0,2,4,6,3-color,regular,1,covered
+216,15,5,3,1,0,2,4,6,reverse color-match,regular,1,covered
 217,6,0,16,1,0,10,1,6,4-color,snoutless,2,covered
 218,0,7,13,2,0,1,0,5,N/A,regular,3,covered
 219,0,2,15,13,0,0,4,5,N/A,snout-match,3,covered
@@ -332,7 +332,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 331,5,1,5,0,0,3,4,6,3-color,regular,2,covered
 332,3,0,0,6,3,15,0,6,N/A,regular,3,magic monk
 333,14,2,1,2,0,1,0,6,4-color,regular,2,covered
-334,33,4,17,18,3,0,7,7,4-color,snout-match,1,covered
+334,33,4,17,18,3,0,7,7,3-color,snout-match,1,covered
 335,6,5,8,0,0,6,2,6,3-color,regular,2,covered
 336,18,10,33,0,0,4,2,6,4-color,regular,2,covered
 337,15,15,1,0,0,13,7,6,3-color,regular,2,covered
@@ -1033,7 +1033,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 1032,0,2,30,0,1,20,6,6,N/A,regular,2,covered
 1033,21,2,26,11,0,2,1,6,3-color,regular,1,covered
 1034,16,11,1,0,2,0,7,7,3-color,snout-match,2,covered
-1035,33,13,17,3,5,4,6,7,4-color,regular,0,covered
+1035,33,13,17,3,5,4,6,7,3-color,regular,0,covered
 1036,14,16,33,0,0,20,2,6,4-color,regular,2,covered
 1037,12,1,1,4,3,8,3,7,4-color,regular,0,covered
 1038,0,1,0,6,0,0,1,4,N/A,snout-match,4,naked
@@ -1128,7 +1128,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 1127,0,4,15,1,0,0,2,5,N/A,snout-match,3,covered
 1128,3,4,0,3,0,1,3,5,N/A,snoutless,2,magic monk
 1129,0,0,11,7,3,2,5,6,N/A,regular,2,covered
-1130,15,3,3,16,0,0,0,6,3-color,snout-match,3,covered
+1130,15,3,3,16,0,0,0,6,reverse color-match,snout-match,3,covered
 1131,22,6,13,10,0,0,0,6,3-color,snout-match,3,covered
 1132,0,5,26,2,4,11,1,6,N/A,regular,1,covered
 1133,6,12,17,13,2,23,2,7,4-color,regular,0,covered
@@ -1326,7 +1326,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 1325,18,12,0,0,0,4,7,5,N/A,regular,3,magic monk
 1326,0,1,17,5,0,1,4,5,N/A,regular,2,covered
 1327,19,2,0,0,3,7,2,6,N/A,regular,2,magic monk
-1328,15,4,17,19,2,30,6,7,4-color,snoutless,0,covered
+1328,15,4,17,19,2,30,6,7,3-color,snoutless,0,covered
 1329,5,0,32,5,3,14,6,7,4-color,regular,1,covered
 1330,30,4,11,1,0,4,1,6,4-color,regular,1,covered
 1331,0,0,0,16,0,5,6,4,N/A,regular,4,naked
@@ -1375,7 +1375,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 1374,2,4,0,10,2,7,3,6,N/A,regular,1,magic monk
 1375,0,9,0,0,0,12,7,4,N/A,regular,4,naked
 1376,20,13,7,9,0,4,6,6,4-color,regular,1,covered
-1377,33,1,17,8,0,18,3,6,4-color,snout-match,1,covered
+1377,33,1,17,8,0,18,3,6,3-color,snout-match,1,covered
 1378,0,6,21,0,0,5,7,5,N/A,regular,3,covered
 1379,7,13,7,6,0,20,6,6,color-match,regular,1,covered
 1380,19,10,0,16,1,10,0,6,N/A,regular,2,magic monk
@@ -1775,7 +1775,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 1774,0,16,10,6,0,0,3,5,N/A,regular,3,covered
 1775,11,10,33,2,1,1,5,7,4-color,regular,0,covered
 1776,27,8,3,1,0,10,3,6,4-color,snout-match,1,covered
-1777,32,3,43,2,1,1,5,7,4-color,regular,0,covered
+1777,32,3,43,2,1,1,5,7,3-color,regular,0,covered
 1778,14,9,1,7,2,0,5,7,4-color,snout-match,1,covered
 1779,12,11,10,3,0,0,2,6,3-color,snout-match,2,covered
 1780,3,4,1,4,0,0,3,6,3-color,snout-match,2,covered
@@ -1885,7 +1885,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 1884,36,9,16,4,0,16,7,6,4-color,snoutless,1,covered
 1885,0,0,24,9,0,23,6,5,N/A,regular,3,covered
 1886,19,2,23,0,0,7,4,6,color-match,regular,2,covered
-1887,33,1,17,6,0,1,5,6,4-color,regular,1,covered
+1887,33,1,17,6,0,1,5,6,3-color,regular,1,covered
 1888,0,2,2,8,1,1,3,6,N/A,regular,1,covered
 1889,3,3,14,9,0,20,0,6,4-color,regular,2,covered
 1890,0,11,40,11,0,0,1,5,N/A,snout-match,3,covered
@@ -2347,7 +2347,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 2346,17,2,28,8,0,18,6,6,4-color,snout-match,1,covered
 2347,8,4,0,4,0,11,6,5,N/A,regular,2,magic monk
 2348,16,4,35,10,0,1,7,6,4-color,snoutless,1,covered
-2349,15,4,20,3,1,0,3,7,4-color,snout-match,1,covered
+2349,15,4,20,3,1,0,3,7,3-color,snout-match,1,covered
 2350,0,0,0,1,2,15,2,5,N/A,regular,3,tagged
 2351,2,10,0,0,5,0,3,6,N/A,regular,3,magic monk
 2352,0,1,8,3,5,14,1,6,N/A,regular,1,covered
@@ -2615,7 +2615,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 2614,14,5,7,13,0,18,3,6,4-color,snout-match,1,covered
 2615,0,9,18,0,3,15,0,6,N/A,snoutless,3,covered
 2616,10,8,5,0,1,7,3,7,3-color,regular,1,covered
-2617,15,11,3,1,0,0,7,6,3-color,snout-match,2,covered
+2617,15,11,3,1,0,0,7,6,reverse color-match,snout-match,2,covered
 2618,34,10,17,0,0,0,0,6,4-color,regular,4,covered
 2619,24,2,7,1,0,13,4,6,4-color,regular,1,covered
 2620,11,1,32,12,0,0,4,6,3-color,snout-match,2,covered
@@ -2996,7 +2996,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 2995,11,2,0,7,0,7,7,5,N/A,regular,2,magic monk
 2996,0,10,25,17,0,3,6,5,N/A,regular,2,covered
 2997,1,6,33,1,0,23,6,6,3-color,regular,1,covered
-2998,15,2,20,0,0,7,3,6,4-color,regular,2,covered
+2998,15,2,20,0,0,7,3,6,3-color,regular,2,covered
 2999,0,0,0,6,0,6,2,4,N/A,regular,4,naked
 3000,14,11,28,0,0,0,7,6,4-color,snout-match,3,covered
 3001,10,15,20,6,2,17,0,7,3-color,regular,1,covered
@@ -3244,7 +3244,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 3243,9,3,23,2,0,1,5,6,4-color,regular,1,covered
 3244,0,6,0,1,0,18,2,4,N/A,snout-match,3,naked
 3245,2,1,5,8,0,6,4,6,3-color,regular,1,covered
-3246,32,2,20,4,0,4,1,6,4-color,regular,1,covered
+3246,32,2,20,4,0,4,1,6,3-color,regular,1,covered
 3247,14,4,1,17,1,1,4,7,4-color,snoutless,0,covered
 3248,0,0,18,1,0,0,6,5,N/A,snoutless,4,covered
 3249,18,0,1,7,0,3,4,6,4-color,regular,2,covered
@@ -3432,7 +3432,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 3431,0,14,1,0,0,3,6,5,N/A,regular,3,covered
 3432,20,0,9,6,0,3,7,6,3-color,regular,2,covered
 3433,0,0,7,14,0,0,1,5,N/A,snoutless,4,covered
-3434,33,14,17,3,0,4,5,6,4-color,regular,1,covered
+3434,33,14,17,3,0,4,5,6,3-color,regular,1,covered
 3435,1,10,12,2,0,4,0,6,4-color,regular,2,covered
 3436,33,14,1,6,0,13,4,6,4-color,regular,1,covered
 3437,1,3,0,17,0,9,4,5,N/A,regular,2,magic monk
@@ -3449,7 +3449,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 3448,8,17,0,3,0,3,1,5,N/A,regular,2,magic monk
 3449,9,1,0,7,0,0,4,5,N/A,snout-match,3,magic monk
 3450,9,13,3,14,2,9,0,7,4-color,regular,1,covered
-3451,15,0,3,3,0,16,3,6,3-color,regular,2,covered
+3451,15,0,3,3,0,16,3,6,reverse color-match,regular,2,covered
 3452,28,0,5,3,0,17,4,6,3-color,regular,2,covered
 3453,29,5,42,10,0,9,7,6,3-color,regular,1,covered
 3454,10,5,33,1,0,8,0,6,3-color,regular,2,covered
@@ -3559,7 +3559,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 3558,0,0,21,0,0,5,4,5,N/A,regular,4,covered
 3559,22,6,7,0,2,0,6,7,3-color,snout-match,2,covered
 3560,0,3,0,2,4,14,1,5,N/A,regular,2,tagged
-3561,33,11,17,6,0,3,2,6,4-color,regular,1,covered
+3561,33,11,17,6,0,3,2,6,3-color,regular,1,covered
 3562,9,2,2,0,0,6,4,6,3-color,regular,2,covered
 3563,17,4,1,3,0,0,6,6,4-color,snout-match,2,covered
 3564,6,0,0,10,0,1,0,5,N/A,regular,4,magic monk
@@ -3663,7 +3663,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 3662,3,12,4,0,1,1,0,7,3-color,regular,2,covered
 3663,2,2,34,5,0,1,6,6,4-color,regular,1,covered
 3664,4,13,16,3,0,0,7,6,4-color,regular,2,covered
-3665,33,10,17,18,0,19,2,6,4-color,regular,1,covered
+3665,33,10,17,18,0,19,2,6,3-color,regular,1,covered
 3666,31,2,7,12,0,1,1,6,3-color,regular,1,covered
 3667,22,5,36,3,3,0,2,7,3-color,snout-match,1,covered
 3668,28,14,9,4,0,0,0,6,4-color,regular,3,covered
@@ -3802,7 +3802,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 3801,9,2,13,0,0,8,3,6,3-color,regular,2,covered
 3802,6,1,32,4,0,0,4,6,4-color,snout-match,2,covered
 3803,24,0,0,10,2,12,4,6,N/A,regular,2,magic monk
-3804,15,0,17,1,0,0,1,6,4-color,snoutless,3,covered
+3804,15,0,17,1,0,0,1,6,3-color,snoutless,3,covered
 3805,9,5,0,10,0,14,3,5,N/A,regular,2,magic monk
 3806,18,0,0,1,0,24,6,5,N/A,regular,3,magic monk
 3807,5,1,8,5,2,1,3,7,3-color,regular,0,covered
@@ -3913,7 +3913,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 3912,27,0,0,6,0,2,3,5,N/A,regular,3,magic monk
 3913,0,1,22,0,0,0,5,5,N/A,snout-match,4,covered
 3914,1,1,19,0,2,20,0,7,3-color,regular,2,covered
-3915,32,3,20,18,0,1,6,6,4-color,regular,1,covered
+3915,32,3,20,18,0,1,6,6,3-color,regular,1,covered
 3916,25,10,4,0,0,8,2,6,4-color,regular,2,covered
 3917,7,1,13,1,0,3,4,6,4-color,regular,1,covered
 3918,9,4,7,6,0,1,3,6,4-color,snoutless,1,covered
@@ -4005,7 +4005,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 4004,27,12,6,7,1,0,3,7,4-color,regular,1,covered
 4005,0,1,6,7,0,0,0,5,N/A,snout-match,4,covered
 4006,0,8,31,11,4,8,2,6,N/A,regular,1,covered
-4007,15,6,17,18,0,19,1,6,4-color,regular,1,covered
+4007,15,6,17,18,0,19,1,6,3-color,regular,1,covered
 4008,13,6,11,18,0,3,5,6,3-color,regular,1,covered
 4009,2,9,8,0,0,3,1,6,3-color,regular,2,covered
 4010,20,4,36,6,0,11,4,6,3-color,regular,1,covered
@@ -4748,7 +4748,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 4747,10,16,1,0,0,0,0,6,3-color,regular,4,covered
 4748,23,5,21,1,0,0,3,6,4-color,snout-match,2,covered
 4749,32,0,38,3,0,0,4,6,4-color,snoutless,3,covered
-4750,32,1,3,0,0,14,6,6,4-color,regular,2,covered
+4750,32,1,3,0,0,14,6,6,3-color,regular,2,covered
 4751,0,10,0,0,0,0,4,4,N/A,regular,5,naked
 4752,6,0,1,1,0,7,3,6,3-color,regular,2,covered
 4753,16,17,23,11,0,1,4,6,3-color,regular,1,covered
@@ -5460,7 +5460,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 5459,18,12,22,3,0,1,5,6,3-color,regular,1,covered
 5460,5,10,30,1,0,2,3,6,4-color,regular,1,covered
 5461,4,4,0,5,3,5,5,6,N/A,regular,1,magic monk
-5462,15,4,43,0,0,6,6,6,4-color,regular,2,covered
+5462,15,4,43,0,0,6,6,6,3-color,regular,2,covered
 5463,1,9,8,13,0,0,0,6,color-match,snout-match,3,covered
 5464,1,13,8,5,2,28,4,7,color-match,regular,0,covered
 5465,24,7,11,22,2,2,1,7,4-color,regular,0,covered
@@ -6199,7 +6199,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 6198,16,4,22,21,1,29,1,7,3-color,regular,0,covered
 6199,0,12,33,0,0,8,7,5,N/A,regular,3,covered
 6200,10,1,21,5,3,9,1,7,2-color w/ matching solid color hat,regular,0,covered
-6201,33,9,17,2,0,27,4,6,4-color,regular,1,covered
+6201,33,9,17,2,0,27,4,6,3-color,regular,1,covered
 6202,8,0,11,12,1,0,5,7,3-color,snoutless,2,covered
 6203,11,3,35,4,0,12,0,6,3-color,regular,2,covered
 6204,22,0,4,17,0,0,7,6,2-color w/ matching solid color hat,snoutless,3,covered
@@ -6233,7 +6233,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 6232,0,12,15,0,0,13,5,5,N/A,regular,3,covered
 6233,26,7,24,10,6,17,7,7,3-color,regular,0,covered
 6234,0,0,14,0,3,3,3,6,N/A,regular,3,covered
-6235,33,6,20,0,0,0,2,6,4-color,snout-match,3,covered
+6235,33,6,20,0,0,0,2,6,3-color,snout-match,3,covered
 6236,10,9,0,2,0,5,1,5,N/A,snoutless,2,magic monk
 6237,3,11,32,12,1,14,2,7,3-color,regular,0,covered
 6238,12,4,18,1,2,1,3,7,color-match,snoutless,0,covered
@@ -6419,7 +6419,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 6418,14,2,5,16,0,4,7,6,4-color,regular,1,covered
 6419,27,3,0,9,0,0,6,5,N/A,snout-match,3,magic monk
 6420,31,13,16,13,4,25,0,7,4-color,regular,1,covered
-6421,15,4,20,4,0,0,7,6,4-color,snout-match,2,covered
+6421,15,4,20,4,0,0,7,6,3-color,snout-match,2,covered
 6422,8,16,17,0,1,3,6,7,4-color,regular,1,covered
 6423,28,2,23,18,0,17,7,6,3-color,regular,1,covered
 6424,8,9,6,1,0,0,6,6,3-color,snout-match,2,covered
@@ -6510,7 +6510,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 6509,29,5,0,0,5,0,2,6,N/A,snout-match,3,magic monk
 6510,4,7,0,0,0,12,1,5,N/A,snoutless,3,magic monk
 6511,18,5,35,4,0,1,2,6,4-color,regular,1,covered
-6512,15,16,20,0,3,11,4,7,4-color,regular,1,covered
+6512,15,16,20,0,3,11,4,7,3-color,regular,1,covered
 6513,17,1,1,6,0,0,3,6,4-color,snout-match,2,covered
 6514,16,1,6,14,1,27,6,7,3-color,regular,0,covered
 6515,16,5,24,3,0,17,5,6,3-color,regular,1,covered
@@ -6718,7 +6718,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 6717,5,4,21,13,0,2,4,6,4-color,regular,1,covered
 6718,32,5,21,0,0,2,7,6,4-color,regular,2,covered
 6719,5,0,3,6,4,0,4,7,3-color,snoutless,2,covered
-6720,15,6,20,4,0,15,6,6,4-color,regular,1,covered
+6720,15,6,20,4,0,15,6,6,3-color,regular,1,covered
 6721,4,1,12,3,2,5,5,7,4-color,regular,0,covered
 6722,28,4,13,16,0,0,1,6,3-color,snout-match,2,covered
 6723,0,5,1,11,1,2,2,6,N/A,regular,1,covered
@@ -6810,7 +6810,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 6809,25,4,11,1,5,12,6,7,3-color,regular,0,covered
 6810,0,0,24,5,0,5,3,5,N/A,regular,3,covered
 6811,1,4,2,12,0,11,2,6,3-color,regular,1,covered
-6812,15,6,20,0,0,9,7,6,4-color,regular,2,covered
+6812,15,6,20,0,0,9,7,6,3-color,regular,2,covered
 6813,0,1,33,9,0,3,5,5,N/A,regular,2,covered
 6814,16,2,21,0,0,2,7,6,3-color,regular,2,covered
 6815,29,7,0,0,4,2,7,6,N/A,regular,2,magic monk
@@ -7461,7 +7461,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 7460,24,7,6,13,0,0,7,6,4-color,snout-match,2,covered
 7461,15,11,22,8,1,3,0,7,4-color,regular,1,covered
 7462,22,5,0,19,1,5,3,6,N/A,regular,1,magic monk
-7463,15,3,3,12,0,0,5,6,3-color,snout-match,2,covered
+7463,15,3,3,12,0,0,5,6,reverse color-match,snout-match,2,covered
 7464,1,6,0,10,1,0,1,6,N/A,snout-match,2,magic monk
 7465,13,11,9,0,0,18,1,6,4-color,snout-match,2,covered
 7466,11,16,5,1,0,24,0,6,3-color,regular,2,covered
@@ -7806,9 +7806,9 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 7805,4,5,12,3,0,1,7,6,4-color,regular,1,covered
 7806,18,1,20,12,4,18,7,7,4-color,snout-match,0,covered
 7807,8,12,11,3,0,21,5,6,3-color,regular,1,covered
-7808,15,3,3,4,0,0,7,6,3-color,snout-match,2,covered
+7808,15,3,3,4,0,0,7,6,reverse color-match,snout-match,2,covered
 7809,15,0,0,10,0,9,2,5,N/A,regular,3,magic monk
-7810,15,10,20,18,0,1,3,6,4-color,regular,1,covered
+7810,15,10,20,18,0,1,3,6,3-color,regular,1,covered
 7811,7,9,36,2,0,5,3,6,4-color,snoutless,1,covered
 7812,5,3,13,13,6,2,0,7,4-color,regular,1,covered
 7813,6,5,6,0,1,5,7,7,3-color,regular,1,covered
@@ -7983,7 +7983,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 7982,34,16,1,0,0,1,7,6,4-color,regular,2,covered
 7983,17,14,2,5,0,8,3,6,4-color,regular,1,covered
 7984,14,0,0,6,0,0,1,5,N/A,snoutless,4,magic monk
-7985,15,5,17,17,0,0,6,6,4-color,snout-match,2,covered
+7985,15,5,17,17,0,0,6,6,3-color,snout-match,2,covered
 7986,7,2,3,1,0,1,0,6,3-color,regular,2,covered
 7987,13,0,0,1,0,11,5,5,N/A,regular,3,magic monk
 7988,17,4,0,14,0,3,1,5,N/A,regular,2,magic monk
@@ -8634,7 +8634,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 8633,9,1,0,1,0,5,6,5,N/A,regular,2,magic monk
 8634,5,6,30,6,0,31,2,6,4-color,regular,1,covered
 8635,3,9,28,17,2,2,6,7,reverse color-match,regular,0,covered
-8636,15,0,17,10,0,4,4,6,4-color,regular,2,covered
+8636,15,0,17,10,0,4,4,6,3-color,regular,2,covered
 8637,2,1,1,5,0,1,3,6,3-color,regular,1,covered
 8638,2,3,3,3,0,25,7,6,3-color,regular,1,covered
 8639,22,7,35,20,0,11,6,6,3-color,regular,1,covered
@@ -8798,7 +8798,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 8797,25,1,18,18,0,2,7,6,3-color,regular,1,covered
 8798,32,1,14,22,3,12,2,7,4-color,regular,0,covered
 8799,0,0,0,1,0,3,3,4,N/A,regular,4,naked
-8800,33,1,17,6,4,0,1,7,4-color,snout-match,1,covered
+8800,33,1,17,6,4,0,1,7,3-color,snout-match,1,covered
 8801,0,1,17,0,0,1,2,5,N/A,regular,3,covered
 8802,22,16,35,13,0,16,3,6,3-color,regular,1,covered
 8803,13,1,16,7,0,9,0,6,3-color,regular,2,covered
@@ -8806,7 +8806,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 8805,1,2,12,15,0,6,3,6,4-color,regular,1,covered
 8806,0,3,1,7,0,0,6,5,N/A,snout-match,3,covered
 8807,0,9,21,9,4,1,6,6,N/A,regular,1,covered
-8808,15,1,17,2,4,0,6,7,4-color,snout-match,1,covered
+8808,15,1,17,2,4,0,6,7,3-color,snout-match,1,covered
 8809,5,9,0,1,0,2,3,5,N/A,regular,2,magic monk
 8810,2,2,15,18,0,1,2,6,3-color,regular,1,covered
 8811,35,9,17,10,0,9,6,6,4-color,regular,1,covered
@@ -8836,14 +8836,14 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 8835,0,1,13,0,0,25,5,5,N/A,regular,3,covered
 8836,17,11,0,15,1,0,3,6,N/A,snout-match,2,magic monk
 8837,12,6,5,12,4,1,3,7,4-color,regular,0,covered
-8838,33,9,3,18,0,3,1,6,4-color,regular,1,covered
+8838,33,9,3,18,0,3,1,6,3-color,regular,1,covered
 8839,0,10,25,4,0,20,6,5,N/A,regular,2,covered
 8840,20,1,16,9,0,4,6,6,4-color,regular,1,covered
 8841,16,14,0,0,0,4,1,5,N/A,regular,3,magic monk
 8842,29,5,22,9,5,17,7,7,3-color,regular,0,covered
 8843,0,6,23,7,4,0,4,6,N/A,snout-match,2,covered
 8844,0,0,13,0,0,0,2,5,N/A,snoutless,5,covered
-8845,32,2,3,1,0,12,7,6,4-color,regular,1,covered
+8845,32,2,3,1,0,12,7,6,3-color,regular,1,covered
 8846,5,14,22,2,0,0,7,6,4-color,regular,2,covered
 8847,20,6,10,1,0,10,1,6,4-color,snout-match,1,covered
 8848,21,11,3,0,0,3,1,6,4-color,regular,2,covered
@@ -8957,7 +8957,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 8956,4,6,23,10,1,5,3,7,4-color,regular,0,covered
 8957,20,6,26,2,0,14,3,6,3-color,regular,1,covered
 8958,0,12,3,1,1,0,1,6,N/A,regular,2,covered
-8959,32,1,43,1,0,11,7,6,4-color,regular,1,covered
+8959,32,1,43,1,0,11,7,6,3-color,regular,1,covered
 8960,10,4,7,2,0,0,2,6,3-color,snout-match,2,covered
 8961,21,4,2,6,2,0,1,7,4-color,snout-match,1,covered
 8962,1,8,26,21,0,3,5,6,3-color,regular,1,covered
@@ -8972,7 +8972,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 8971,0,0,19,3,2,16,3,6,N/A,regular,2,covered
 8972,15,5,13,3,3,2,0,7,4-color,regular,1,covered
 8973,10,3,0,1,6,30,6,6,N/A,regular,1,magic monk
-8974,15,0,20,12,0,4,7,6,4-color,regular,2,covered
+8974,15,0,20,12,0,4,7,6,3-color,regular,2,covered
 8975,0,4,16,7,0,1,2,5,N/A,snoutless,2,covered
 8976,9,8,12,5,3,19,4,7,3-color,regular,0,covered
 8977,0,6,5,6,0,3,6,5,N/A,regular,2,covered
@@ -9217,7 +9217,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 9216,21,8,0,5,0,22,5,5,N/A,regular,2,magic monk
 9217,1,2,0,6,0,28,3,5,N/A,regular,2,magic monk
 9218,0,2,0,0,0,2,0,4,N/A,regular,5,naked
-9219,15,4,20,1,4,7,2,7,4-color,regular,0,covered
+9219,15,4,20,1,4,7,2,7,3-color,regular,0,covered
 9220,0,10,0,5,0,1,3,4,N/A,regular,3,naked
 9221,9,0,0,4,0,0,6,5,N/A,snoutless,4,magic monk
 9222,21,4,0,0,0,21,3,5,N/A,regular,3,magic monk
@@ -9473,7 +9473,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 9472,19,8,26,12,1,7,1,7,3-color,regular,0,covered
 9473,15,5,31,11,0,0,2,6,4-color,snout-match,2,covered
 9474,6,3,3,1,0,11,2,6,3-color,regular,1,covered
-9475,15,12,3,0,0,3,1,6,3-color,regular,2,covered
+9475,15,12,3,0,0,3,1,6,reverse color-match,regular,2,covered
 9476,0,5,10,7,0,0,0,5,N/A,snout-match,4,covered
 9477,12,3,8,3,2,15,7,7,4-color,regular,0,covered
 9478,7,4,4,15,0,19,6,6,3-color,regular,1,covered
@@ -9719,7 +9719,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 9718,29,7,13,3,0,3,2,6,3-color,snoutless,1,covered
 9719,21,0,14,15,0,4,6,6,3-color,regular,2,covered
 9720,0,3,22,3,0,2,0,5,N/A,regular,3,covered
-9721,15,9,20,2,0,10,4,6,4-color,snout-match,1,covered
+9721,15,9,20,2,0,10,4,6,3-color,snout-match,1,covered
 9722,7,6,21,5,0,13,3,6,4-color,regular,1,covered
 9723,29,7,32,1,0,0,1,6,3-color,snout-match,2,covered
 9724,18,10,4,2,0,3,2,6,3-color,regular,1,covered
@@ -9820,7 +9820,7 @@ tokenId, hat, fur, clothes, eyes, earring, mouth, background, trait-count, color
 9819,22,15,0,7,0,2,5,5,N/A,regular,2,magic monk
 9820,0,2,1,7,0,10,5,5,N/A,snout-match,2,covered
 9821,12,0,30,13,0,0,6,6,3-color,snoutless,3,covered
-9822,15,10,3,0,0,0,2,6,3-color,regular,3,covered
+9822,15,10,3,0,0,0,2,6,reverse color-match,regular,3,covered
 9823,16,0,7,14,1,2,1,7,3-color,regular,1,covered
 9824,11,0,3,5,1,28,2,7,4-color,regular,1,covered
 9825,13,2,3,0,0,11,2,6,4-color,regular,2,covered
