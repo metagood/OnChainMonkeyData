@@ -1,0 +1,23 @@
+nifty.txt is the output of:
+https://api.niftygateway.com/v1/creators/onchainmonkey/collectors/?limit=200&offset=0
+at the time of the snapshot at Feb-01-2022 12:02:59 AM +UTC.
+
+That will be used to distribute the Desserts for the OCM in the NiftyGateway custodial wallet (0xe052113bd7d7700d623414a0a4585bcae754e9d5)
+
+	elliottd1966	Elliott Donnelley	{"contractAddress"=>"0x960b7a6bcd451c9968473f7bbfd9be826efd549a", "tokenId"=>"4586", "name"=>"OnChain Monkey #4586", "creator"=>{"name"=>"onchainmonkey", "username"=>"onchainmonkey", "profilePicUrl"=>"https://res.cloudinary.com/nifty-gateway/image/upload/v1633824535/ddtqjpzr4lvuat8ze9ld.png"}, "owner"=>{"name"=>"Elliott Donnelley", "username"=>"elliottd1966", "profilePicUrl"=>"https://nftgimagebucket.s3-us-west-1.amazonaws.com/nifty_default_pic1.jpg", "airdropAddressEth"=>nil}}
+	elliottd1966	Elliott Donnelley	{"contractAddress"=>"0x960b7a6bcd451c9968473f7bbfd9be826efd549a", "tokenId"=>"8995", "name"=>"OnChain Monkey #8995", "creator"=>{"name"=>"onchainmonkey", "username"=>"onchainmonkey", "profilePicUrl"=>"https://res.cloudinary.com/nifty-gateway/image/upload/v1633824535/ddtqjpzr4lvuat8ze9ld.png"}, "owner"=>{"name"=>"Elliott Donnelley", "username"=>"elliottd1966", "profilePicUrl"=>"https://nftgimagebucket.s3-us-west-1.amazonaws.com/nifty_default_pic1.jpg", "airdropAddressEth"=>nil}}
+	grettakruesi	Voglife	{"contractAddress"=>"0x960b7a6bcd451c9968473f7bbfd9be826efd549a", "tokenId"=>"5507", "name"=>"OnChain Monkey #5507", "creator"=>{"name"=>"onchainmonkey", "username"=>"onchainmonkey", "profilePicUrl"=>"https://res.cloudinary.com/nifty-gateway/image/upload/v1633824535/ddtqjpzr4lvuat8ze9ld.png"}, "owner"=>{"name"=>"Voglife", "username"=>"grettakruesi", "profilePicUrl"=>"https://res.cloudinary.com/nifty-gateway/image/upload/v1642984504/oga6gnxdlmbejcjghfva.jpg", "airdropAddressEth"=>nil}}
+	yasidasi	yasmeen drummond	{"contractAddress"=>"0x960b7a6bcd451c9968473f7bbfd9be826efd549a", "tokenId"=>"4313", "name"=>"OnChain Monkey #4313", "creator"=>{"name"=>"onchainmonkey", "username"=>"onchainmonkey", "profilePicUrl"=>"https://res.cloudinary.com/nifty-gateway/image/upload/v1633824535/ddtqjpzr4lvuat8ze9ld.png"}, "owner"=>{"name"=>"yasmeen drummond", "username"=>"yasidasi", "profilePicUrl"=>"https://nftgimagebucket.s3-us-west-1.amazonaws.com/nifty_default_pic3.jpg", "airdropAddressEth"=>nil}}
+
+These 4 OCM are missing airdrop addresses: 4586, 8995, 5507, 4313
+
+
+nifty_after.txt was the output a few days later. OCM 5507 has not changed hands and now has an airdrop address of 0x0e2e6c6a84e738263f0dddc258649c3b9f8b2468
+[{"contractAddress"=>"0x960b7a6bcd451c9968473f7bbfd9be826efd549a", "tokenId"=>"5507", "name"=>"OnChain Monkey #5507", "creator"=>{"name"=>"onchainmonkey", "username"=>"onchainmonkey", "profilePicUrl"=>"https://res.cloudinary.com/nifty-gateway/image/upload/v1633824535/ddtqjpzr4lvuat8ze9ld.png"}, "owner"=>{"name"=>"Voglife", "username"=>"grettakruesi", "profilePicUrl"=>"https://res.cloudinary.com/nifty-gateway/image/upload/v1642984504/oga6gnxdlmbejcjghfva.jpg", "airdropAddressEth"=>"0x0e2e6c6a84e738263f0dddc258649c3b9f8b2468"}}]
+
+
+OCM 9501 to 10000 are held by Metagood and Desserts for those will be distributed to the Metagood wallet.
+
+snapshot-14116777raw.csv are the list of owners from the Ethereum blockchain.
+
+snapshot.csv combines Nifty airdrop addresses with snapshot-14116777raw.csv
