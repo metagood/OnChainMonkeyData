@@ -1,3 +1,23 @@
+REMEMBER: The Dessert airdrop does NOT involve any stealth drops or mints! Watch out for fraudulent NFTs that are fake. You do NOT need to mint or send any transaction to receive the Dessert.
+
+Please check the snapshat to make sure your address is correctly listed from the Feb 1 snapshot: https://raw.githubusercontent.com/metagood/OnChainMonkeyData/main/DessertSnapshot/snapshot.csv
+
+The important Ethereum addresses are as follows. Also, because no source is 100% safe, check these addresses against a second source! Look for tweets from OnChainMonkey, and check the OnChainMonkey.com website for the same addresses.
+
+1. OCM Deployer address: 0x164e0d92eed7c397c675fede671b49ce2b289d1f
+https://opensea.io/OCM_deployer
+
+2. OCM Randomizer smart contract https://etherscan.io/address/0xbe53d018dc774c0d263f0f435f3b4749d80e2566
+
+3. Most importantly, this is the OCM Desserts smart contract
+https://etherscan.io/address/0x5079fc4e96338be1b5aff236ff4b00ec4452b2d3
+
+After the airdrop, the 3 Desserts will show up at: https://opensea.io/assets/0x5079fc4e96338be1b5aff236ff4b00ec4452b2d3/1
+https://opensea.io/assets/0x5079fc4e96338be1b5aff236ff4b00ec4452b2d3/2
+https://opensea.io/assets/0x5079fc4e96338be1b5aff236ff4b00ec4452b2d3/3
+
+
+
 nifty.txt is the output of:
 https://api.niftygateway.com/v1/creators/onchainmonkey/collectors/?limit=200&offset=0
 at the time of the snapshot at Feb-01-2022 12:02:59 AM +UTC.
