@@ -8,11 +8,9 @@ desserts = [
     ]
 ]
 
-offset = 200
+OFFSET = 7775
 
-offseted_desserts = [
-    desserts[i] for i in range(offset, len(desserts))
-] + (desserts[:offset])
+offseted_desserts = desserts[OFFSET:] + (desserts[:OFFSET])
 
 content = "\n".join([f"{i+1},{d}" for i, d in enumerate(offseted_desserts)])
 
