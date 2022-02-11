@@ -8,12 +8,12 @@ desserts = [
     ]
 ]
 
-OFFSET = 7775
+OFFSET = 9225
 
 offseted_desserts = desserts[OFFSET:] + (desserts[:OFFSET])
 
 content = "\n".join([f"{i+1},{d}" for i, d in enumerate(offseted_desserts)])
 
-with open("clarke.csv", "w") as f:
+with open("dessert-draw.csv", "w") as f:
     f.write(content)
     f.write("\n")
