@@ -16,3 +16,4 @@ content = "\n".join([f"{i+1},{d}" for i, d in enumerate(offseted_desserts)])
 
 with open("clarke.csv", "w") as f:
     f.write(content)
+    f.write("\n")
